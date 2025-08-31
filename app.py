@@ -1,8 +1,8 @@
-# from funciones import *
-import funciones
-#from colorama import Fore
+from funciones import *
+
+
 # Bucle principal
-tareas=[]
+
 while True:
 
     print("\n ***** Gestor de Tareas ****** \n")
@@ -14,22 +14,22 @@ while True:
 
     print("\n ****************************** \n")
 
-    opcion = input("Seleccione una opción (1-5): \n")
+    opcion = input("Seleccione una opción (1-5): ")
 
     # Menu de opciones
 
     match opcion:
-        case "1": # añadir tareas
-            funciones.agregar_tarea(tareas)
-        case "2": # ver tareas
-            funciones.ver_tarea(tareas)
-        case "3": # completar tareas
-            funciones.completar_tarea(tareas)
-        case "4": # eliminar tareas
-            funciones.eliminar_tarea(tareas)
-        case "5": # salir
+        case "1":  # añadir tareas
+            agregar_tarea(tareas)
+        case "2":  # ver tareas
+            ver_tarea(tareas)
+        case "3":  # completar tareas
+            completar_tarea(tareas)
+        case "4":  # eliminar tareas
+            eliminar_tarea(tareas)
+        case "5":  # salir
             print("Gracias por utilizar el programa de gestion de tareas")
             break
-        case _: # casos no validos
+        case _:  # casos no validos
             print("opcion invalida ingrese entre 1-5")
     print("\n")
